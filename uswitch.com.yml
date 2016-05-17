@@ -1,0 +1,100 @@
+---
+www.uswitch.com:
+  check_200:
+    - "/health-insurance/quote/secure/v2/getquotes.aspx"
+    - "/home-insurance/quotes/"
+    - "/life-insurance/quote/secure/v2/getquotes.aspx"
+    - "/car-insurance/internal/passport"
+    - "/search/"
+    - "/includes/statuscheck"
+    - "/sif/"
+    - "/gas-electricity/"
+    - "/boiler-cover/application/"
+    - "/car-insurance/"
+    - "/credit-cards/reporting/tracker/status"
+    - "/gas-electricity/news/"
+    - "/boilers/guides/new-boiler-cost/"
+    - "/business-energy/guides/"
+    - "/business-energy/guides/business-electricity/"
+    - "/boilers/new-boiler/"
+    - "/address-lookup/status"
+    - "/region/"
+    - "/cookies/"
+    - "/broadband/packages/"
+    - "/broadband/speedtest/"
+    - "/broadband/compare/deals_and_offers/"
+    - "/broadband/compare/wireless_broadband/"
+    - "/broadband/compare/no_virgin_media/"
+    - "/broadband/compare/cheap_broadband/"
+    - "/mobiles/"
+    - "/mobiles/guides/"
+    - "/mobiles/news/"
+    - "/mobiles/compare/sim_only_deals/"
+    - "/mobiles/compare/contract_phones/"
+    - "/mobiles/iphone_6_deals/"
+    - "/mobiles/iphone_5_deals/"
+    - "/mobiles/iphone_deals/"
+    - "/mobiles/deals/apple_iphone_6_16gb_gold/"
+    - "/insurance/"
+    - "/insurance/news/"
+    - "/insurance/guides/"
+    - "/car-insurance/guides/"
+    - "/life-insurance/guides/"
+    - "/banking/"
+    - "/banking/itsmyreport/"
+    - "/banking/guides/"
+    - "/banking/news/"
+    - "/loans/"
+    - "/loans/redirect/?id=2&source=Smoke+test"
+    - "/loans/personal-loans/"
+    - "/loans/secured-loans/"
+    - "/loans/bad-credit-loans/"
+    - "/loans/bad-credit/"
+    - "/credit-cards/"
+    - "/credit-cards/credit-card-balance-transfers/"
+    - "/credit-cards/interest-free-credit-cards/"
+    - "/credit-cards/mastercard/"
+    - "/credit-cards/mastercard.json/"
+    - "/credit-cards/visa/"
+    - "/credit-cards/instant-decision-credit-cards/"
+    - "/credit-cards/redirect/?id=1&source=Smoke+test"
+    - "/media-centre/"
+    - "/mortgages/"
+    - "/mortgages/remortgaging/"
+    - "/mortgages/companies/"
+    - "/mortgages/companies/hsbc/"
+    - "/mortgages/90-ltv/"
+    - "/current-accounts/"
+    - "/current-accounts/packaged/"
+    - "/current-accounts/companies/"
+    - "/current-accounts/companies/barclays/"
+    - "/credit-reports/"
+    - "/students/"
+    - "/crossdomain.xml"
+    - "/health-status/"
+
+  check_3xx:
+    - ["/account/", "https://www.uswitch.com/account/signin"]
+    - ["/gas-electricity", "https://www.uswitch.com/gas-electricity/"]
+    - ["/press-room", "https://www.uswitch.com/media-centre/"]
+    - ["/about-us/uSwitch-community-events",
+      "https://www.uswitch.com/about-us/uswitch-community-events/"]
+    - ["/careers", "https://www.uswitch.com/vacancies/"]
+    - ["/boiler-cover", "https://www.uswitch.com/boiler-cover/application/"]
+    - ["/car-insurance?ref=test",
+      "https://www.uswitch.com/car-insurance/?ref=test"]
+    - ["/credit-cards/instant-decision-credit-card",
+      "https://www.uswitch.com/credit-cards/instant-decision-credit-card/"]
+    - ["/gas-electricity", "https://www.uswitch.com/gas-electricity/"]
+  #
+  # check_header:
+  #   - ["/", "set-cookie", "uscc="]
+  #   - ["/", "set-cookie", "uscv="]
+  #   - ["/", "set-cookie", "uscd="]
+  #   - ["/gas-electricity/", "set-cookie", "_energy-new_session"]
+
+www.uswitch-static.com:
+  check_200:
+    - "/s3/uswitch-assets-eu/ustyle/ustyle-latest.css"
+    - "/s3/uswitch-assets-eu/terms-and-conditions/edf-copy-of-bluefixed-price-february-2017-1434458160.pdf"
+    - "/PIE.htc"
