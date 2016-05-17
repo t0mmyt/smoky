@@ -22,14 +22,14 @@ Tests to run are stored in YAML. Top level key is the Host header, second level 
 
 ### Example
 
----
-www.uswitch.com:
-  check_200:
-    - "/health-insurance/quote/secure/v2/getquotes.aspx"
-    - "/home-insurance/quotes/"
-  check_3xx:
-    - ["/account/", "https://www.uswitch.com/account/signin"]
-    - ["/gas-electricity", "https://www.uswitch.com/gas-electricity/"]
+    ---
+    www.uswitch.com:
+      check_200:
+        - "/health-insurance/quote/secure/v2/getquotes.aspx"
+        - "/home-insurance/quotes/"
+      check_3xx:
+        - ["/account/", "https://www.uswitch.com/account/signin"]
+        - ["/gas-electricity", "https://www.uswitch.com/gas-electricity/"]
 
 # Limitations
 
