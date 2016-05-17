@@ -114,6 +114,7 @@ class Test(object):
         """
         Run tests (with concurrency)
         """
+        # If no targets specified, get all from yml
         targets = self.tests.keys() if not targets else targets
 
         for target in targets:
