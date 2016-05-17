@@ -16,7 +16,7 @@ HTTP Test Harness for "Smoke testing" nginxlb using python3/asyncio.
     docker build -t t0mmyt/smoky .
     docker run --rm -t -v $(pwd)/uswitch.com.yml:/uswitch.com.yml t0mmyt/smoky nginx.uswitch.com /uswitch.com.yml
 
-# #Config
+## Config
 
 Tests to run are stored in YAML. Top level key is the Host header, second level key is the name of the check (found in the HttpSmokeTest class).  Last level is an array test parameters, each parameter being an array of the arguments passed to the test.
 
